@@ -1,0 +1,43 @@
+
+<html>
+
+<head>
+
+<link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+ <!-- il - no code, ili - used by code-->
+ <textarea id="ili"></textarea>
+ <!-- the code is shit i know it please return it back for debugging!!!!!!!!!!!-->
+ <br>
+ <br>
+ <button id="cf" onclick="idr();" class="compileComments">Compile and run</button>
+ <button id="cf" onclick="sidr();" style="position: relative;left: +14px">Stop</button>
+ <!-- cf - no code, cfi - used by code-->
+	<select title="Coloring mode", id="cfi" style="position: relative;left: +28px;top: -1px">
+	<option>3-bit  (xxxxxRGB)</option>
+	<option>6-bit  (xxRRGGBB)</option>
+	<option>12-bit (xxxxRRRR GGGGBBBB)</option>
+	<option>24-bit (RRRRRRRR GGGGGGGG BBBBBBBB)</option>
+	<option selected=true> --- </option>
+
+
+</select>
+ <br>
+ <br>
+ <br>
+ <br>
+ <canvas id="c" width="256" height="256" style="position: relative;top: -3%"> </canvas>
+ <div id="cf" style="background: #333333">
+ CTX resolution: 256x256<br>
+ Screen resolution: 768x512
+ <br>
+ </div>
+ 
+</body>
+
+<script type="text/javascript" src="maincode.js"></script>
+</html>

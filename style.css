@@ -1,0 +1,80 @@
+
+
+body {
+  background: #111111;
+}
+
+#il {
+  color: #eeeeee;
+  background: #313131;
+  outline: 8px ridge rgba(31, 31, 31, .6);
+  width: 60%;
+  //height: 30%;
+  //resize: none;
+  font-size: 24;
+  //display: table;
+  //margin: 0 auto;
+}
+
+#ili {
+  color: #eeeeee;
+  background: #313131;
+  outline: 8px ridge rgba(31, 31, 31, .6);
+  width: 60%;
+  //height: 30%;
+  //resize: ;
+  font-size: 24;
+  //display: table;
+  //margin: 0 auto;
+}
+
+
+#td {
+  color: #eeeeee;
+  position: relative;
+  top: -14.1%;
+  background: #313131;
+  margin-left: +10px;
+  height: 30%;
+  outline: 8px ridge rgba(250, 250, 31, .6);
+  //display: table;
+  //margin: 0 auto;
+}
+@font-face {
+    font-family: 'plexmono';
+    src: url('plexmono.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+#cf {
+font-family: 'plexmono';
+color: rgba(250, 250, 31, 1);
+outline: 8px ridge rgba(250, 250, 31, .6);
+background: #333333;
+font-size: 20;
+}
+
+#cfi {
+font-family: 'plexmono';
+color: rgba(250, 250, 31, 1);
+outline: 8px ridge rgba(250, 250, 31, .6);
+background: #333333;
+font-size: 20;
+}
+
+
+
+#c {
+  color: #eeeeee;
+  background: #313131;
+  outline: 8px ridge rgba(31, 31, 31, .6);
+  width: 768px;
+  height: 512px;
+  
+  
+  resize: none;
+  font-size: 24;
+}
