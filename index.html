@@ -9,6 +9,8 @@
 </head>
 
 <body>
+ <title>BYTECOLOR</title>
+ <h1 id="cfi" style="display: flex; justify-content: center;">Bytecolor v17/12/2023</h1>
  <!-- il - no code, ili - used by code-->
  <textarea id="ili"></textarea>
  <!-- the code is shit i know it please return it back for debugging!!!!!!!!!!!-->
@@ -17,25 +19,68 @@
  <button id="cf" onclick="idr();" class="compileComments">Compile and run</button>
  <button id="cf" onclick="sidr();" style="position: relative;left: +14px">Stop</button>
  <!-- cf - no code, cfi - used by code-->
-	<select title="Coloring mode", id="cfi" style="position: relative;left: +28px;top: -1px">
+	<select title="Coloring mode" id="cfi" style="position: relative;left: +28px;top: -1px">
 	<option>3-bit  (xxxxxRGB)</option>
-	<option>6-bit  (xxRRGGBB)</option>
+	<option selected=true>6-bit  (xxRRGGBB)</option>
 	<option>12-bit (xxxxRRRR GGGGBBBB)</option>
 	<option>24-bit (RRRRRRRR GGGGGGGG BBBBBBBB)</option>
-	<option selected=true> --- </option>
+	</select>
+	<select title="Delay"  id="cfi" class="del" style="position: relative;left: +42px;top: -1px">
+	
+	<option>0ms</option>
+	<option>20ms</option>
+	<option>40ms</option>
+	<option selected=true>60ms</option>
+	<option>80ms</option>
+	<option>100ms</option>
+	<option>auto</option>
+	
+	
+	</select>
+	
+	<select title="Image sharpening"  id="cfi" class="shpi" style="position: relative;left: +57px;top: -1px">
+	<option selected=true>Smooth</option>
+	<option>Sharp</option>
+	</select>
+	
+	<select title="CTX size" id="cfi" class="scale" style="position: relative;left: +70px;top: -1px">
+	
+	<option selected=true>128x128</option>
+	<option>256x128</option>
+	<option>128x256</option>
+	<option>256x192</option>
+	<option>192x256</option>
+	
+	<option>256x256</option>
+	
+	</select>
+	
 
 
 </select>
  <br>
  <br>
+ <div id='cf' class='errors' style="color: #ff3333"></div>
  <br>
  <br>
- <canvas id="c" width="256" height="256" style="position: relative;top: -3%"> </canvas>
+ <br>
+ <canvas id="c" width="256" height="256" class="shp" style="position: relative;top: -3%;image-rendering: pixelated;"> </canvas>
+ 
+ 
  <div id="cf" style="background: #333333">
- CTX resolution: 256x256<br>
- Screen resolution: 768x512
- <br>
+ Bytecolor (prev. progcalc) is a programm, that allows formulas turned into colors. First mention of it was on <a href="https://www.reddit.com/r/bytebeat/comments/18jyi5f/leak_of_player_it_would_play_bytebeats_trust_me/">Reddit, at 16/12/2023</a>.<br>
+ Bytecolor uses bit-palette colors, e.g. <i>3-bit, 6-bit, 12-bit and 24-bit colors.</i> To make image to the screen, we also need to define its sizes, such as 128x128, 256x128 and etc; the formula that uses <i>binary operations (^, &, >>, <<)</i>. <br>
+
  </div>
+ <br><br><br> 
+ <details id="cf">
+ nothing to see here lol wait me to update lib<br>
+ 
+ <summary>
+ Library
+ 
+ </summary>
+ </details>
  
 </body>
 
