@@ -20,8 +20,8 @@ var sharpening = parseInt(tempamp[3],10);
 var res = parseInt(tempamp[4],10);
 
 
-if(bitness){document.getElementById("cfi").selectedIndex = bitness;}
-else       {document.getElementById("cfi").selectedIndex = 1;}
+if(bitness){document.getElementById("cfie").selectedIndex = bitness;}
+//else       {document.getElementById("cfie").selectedIndex = 1;}
 
 if(formula){document.getElementById("ili").value = formula;}
 else       {document.getElementById("ili").value = '((x+80*Math.sin(t/800000))>>2&(y+80*Math.cos(t/800000))>>2)*t>>19';}
@@ -43,7 +43,7 @@ function parseAMP(){
 function saveAMP(){
 	var AMPinterval = document.getElementsByClassName("del")[0].selectedIndex;
 	var AMPsharp = document.getElementsByClassName("shpi")[0].selectedIndex;
-	var e = document.getElementById("cfi");
+	var e = document.getElementById("cfie");
 	
 	var AMPvalue = e.selectedIndex;
 	var AMPvar = btoa(whatsIn());
@@ -118,13 +118,12 @@ function idr(){ // infinite drawing loop. not i dont remember
 	}
 }
 
-function sidr(){ // XAXA CИDP
+function sidr(){ // XAXA CÃËœDP
 	document.getElementsByClassName("compileComments")[0].innerHTML = "Compile and run";
 	isRunning = false;
 	t = 0;
 	clearInterval(twwe);
 }
-
 
 
 function draw(compd){
@@ -137,7 +136,7 @@ function draw(compd){
 		document.getElementsByClassName("shp")[0].style.imageRendering = "";
 	}
 	console.log(document.getElementsByClassName("shpi")[0].selectedIndex,document.getElementsByClassName("shp")[0].style.imageRendering);
-	var e = document.getElementById("cfi");
+	var e = document.getElementById("cfie");
 	var value = e.selectedIndex;
 	for(var x=0;x<ctxW;x++){
 		for(var y=0;y<ctxH;y++){
