@@ -4,6 +4,11 @@ body {
   background: #111111;
 }
 
+#code {
+  color: #ddddff;
+  background: #101010;
+}
+
 #il {
   color: #eeeeee;
   background: #313131;
